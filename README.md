@@ -1,2 +1,4 @@
-# MPhysProject
-MPhys Computational Physics Master's Project 
+# MPhys Computational Physics Project
+
+## Geometric Characterisation and Localisation of Knots using Machine Learning 
+
