@@ -1,0 +1,58 @@
+..TO INITIALISE: 
+
+1. Go to folder INIT
+
+2. Create Polymer via c++ file
+c++ generate_knot -o generate_knot
+use as
+./generate_knot out N p q
+where out is the name of your output and N is the number of beads in the polymer
+p and q are the numbers characterising torus knots. Type p=3 q=2 for a trefoil
+See notes for more information or wiki "torus knots"
+
+3. go to main folder, run lammps command script
+
+TO ANALYSE: 
+
+1. Go to Analysis
+ 
+2. Compute gyration radius & create file for topological analysis using MakeKnotFile
+Use as 
+./MakeKnotFile ../KNOT_data/KNOT3_1. KNOT3_1.dat 50 100 
+for 50 files with a polymer 100 beads long
+
+2a. Exercise: Write a file with the gyration radius of the knot. 
+
+2b. Exercise: Plot it against time and check that it reached a steady state; 
+
+2c. Exercise: Show that different knot types have different gyration radius.
+
+2d. Can you find a law that describes the gyration radius as a function of knot type? 
+(Hint: first you need to think about how to characterise a knot with a single number, it could be the "minimal crossing number" or the "average crossing number". Look them up.)
+
+3. Upload the list of coordinates dumped by MakeKnotFile, e.g. KN_KNOT3_1.dat, in http://kymoknot.sissa.it/kymoknot/interactive.php
+
+3a. Read manual. Play around with the options.  Find knot type and knot length using the kymoknot software.
+
+
+TO VIEW:
+
+visualize in VMD using:
+
+1.VMD
+2. Extension -> Tk console -> type "topo readvarxyz LJ_data/XYZ_LJ.xyz"
+3. Graphics -> Representation -> Coloring Method "Element" -> Drawing Method "VDW"
+
+play around with other numbers, options, etc.
+In particular, use
+
+Display -> Ortographic
+
+
+Produce images by going to
+
+1. File -> Render -> Snapshot
+2. File -> Render -> Tachyon
+
+see difference
+
