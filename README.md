@@ -4,5 +4,5 @@
 
 Languages used: C++, Python, Shell
 
-Software used: LAMMPS, TensorFlow/Keras, KymoKnot, VMD, Jupyter Notebooks, Visual Studio Code
+Software used: LAMMPS, TensorFlow/Keras, Numpy, Pandas, KymoKnot, VMD, Jupyter Notebooks, Visual Studio Code
 
